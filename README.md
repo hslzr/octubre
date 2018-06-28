@@ -1,24 +1,17 @@
-# README
+# Octubre
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> _...[Me llaman Octubre...](https://www.youtube.com/watch?v=tORycIGUfkc)_
 
-Things you may want to cover:
+Open Source for now.
 
-* Ruby version
+### Development
 
-* System dependencies
+Just `git clone` the repo and then use [docker-compose up](https://docs.docker.com/compose/) to start the whole deal.
 
-* Configuration
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. `docker-compose build`
+2. `docker-compose up`
+3. `docker-compose run --rm app rails db:create db:migrate`
+4. ???
+5. Profit.
