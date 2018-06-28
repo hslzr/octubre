@@ -1,0 +1,12 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @worker.name
+p
+  strong Phone:
+  = @worker.phone
+
+=> link_to 'Edit', edit_worker_path(@worker)
+'|
+=< link_to 'Back', workers_path
