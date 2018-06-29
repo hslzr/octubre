@@ -1,0 +1,15 @@
+h2 Iniciar sesión
+
+h5
+  em * Usuarios nuevos 
+  = link_to "registrarse aquí", new_registration_path(resource_name)
+
+= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+  fieldset
+    legend Datos de inicio de sesión
+    = f.input :email, required: false, autofocus: true, wrapper: :mini_input
+    = f.input :password, required: false, wrapper: :mini_input
+    = f.input :remember_me, as: :boolean if devise_mapping.rememberable?
+  = f.button :submit, "Log in"
+
+= render "devise/shared/links"

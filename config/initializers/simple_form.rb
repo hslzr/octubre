@@ -64,6 +64,16 @@ SimpleForm.setup do |config|
     # b.use :full_error, wrap_with: { tag: :span, class: :error }
   end
 
+  config.wrappers :mini_input, tag: 'div', class: 'row responsive-label', error_class: 'error' do |b|
+    b.use :html5
+    b.wrapper tag: 'div', class: 'col-sm-12 col-md-3' do |c|
+      c.use :label
+    end
+    b.wrapper tag: 'div', class: 'col-sm-12 col-md-4' do |c|
+      c.use :input, style: 'width: 85%'
+    end
+  end
+
   # The default wrapper to be used by the FormBuilder.
   config.default_wrapper = :default
 

@@ -1,0 +1,19 @@
+h2 Registro
+
+= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+  = f.error_notification
+  fieldset
+    legend User Registration
+    = f.input :name, required: true, autofocus: true, label: "Nombre", wrapper: :mini_input
+    = f.input :last_name, required: true, label: "Apellido", wrapper: :mini_input
+    = f.input :email, required: true, label: "Correo Electrónico", wrapper: :mini_input
+    .row.responsive-label
+      .col-sm-12.col-md-3
+      .col-sm-12.col-md-4
+        small
+          | No se envían correos de ningún tipo. Bien puedes 
+          | ingresar "demo@demo.com" y funciona.
+    = f.input :password, required: true, label: "Contraseña", wrapper: :mini_input
+    = f.input :password_confirmation, required: true, label: "Confirme su contraseña", wrapper: :mini_input
+  = f.button :submit, "Sign up"
+

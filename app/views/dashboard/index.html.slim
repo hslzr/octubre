@@ -1,2 +1,23 @@
-h1 Dashboard#index
-p Find me in app/views/dashboard/index.html.slim
+h4
+  small = "#{time_greeting},"
+  = full_name
+h1
+  em Me llaman Octubre
+
+.row
+  .col-sm-12.col-md-8
+    h2
+      | Logros
+      small Cosas por hacer y por cambiar
+
+    ul
+      - @todo[:tasks].each do |task|
+        li == task
+
+  .col-sm-12.col-md
+    h3 ¿Por qué "Octubre"?
+    p Es una canción de Love of Lesbian de apenas dos minutos.
+    p
+      a.button href="https://www.youtube.com/watch?v=1gaA8IhWaB4" Youtube
+      a.button href="https://open.spotify.com/track/4yxkZilPRSASU8PskCXS1y?si=FdDwJ97DTOWY-VM4wR5wxg" Spotify
+      a.button href="https://itunes.apple.com/mx/album/me-llaman-octubre/1273111488?i=1273111787" Apple Music

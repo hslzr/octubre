@@ -1,0 +1,11 @@
+:tasks:
+  - <strike>Autenticación (sesión y contraseña, pues)</strike>
+  - Implementar registro de trabajadores
+  - Registro de categorías
+  - Panel de administración global
+  - Creación de roles de usuario
+  - ¿Avatares de usuario?
+  - Two-Factor-Auth
+  - Integración de mapas de Google
+  - Solicitar ubicación al usuario a través del navegador
+  - <b>Contactar abogado para el aviso de privacidad</b>
